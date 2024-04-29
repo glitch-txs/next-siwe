@@ -21,7 +21,7 @@ if (!projectId) {
   throw new Error('NEXT_PUBLIC_PROJECT_ID is not set')
 }
 
-export const authOptions: NextAuthOptions = {
+const authOptions: NextAuthOptions = {
   // https://next-auth.js.org/configuration/providers/oauth
   secret: nextAuthSecret,
   providers: [
