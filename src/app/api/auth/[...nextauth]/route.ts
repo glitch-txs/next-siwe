@@ -68,7 +68,6 @@ const authOptions: NextAuthOptions = {
   },
   callbacks: {
     session({ session, token }) {
-      console.log('session', session)
       if (!token.sub) {
         return session
       }
